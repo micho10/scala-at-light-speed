@@ -1,16 +1,15 @@
 package com.rockthejvm
 
-object ObjectOrientation extends App {
+object ObjectOrientation extends App :
 
   // java equivalent: public static void main(String[] args)
 
   // class and instance
-  class Animal {
+  class Animal :
     // define fields
     val age: Int = 0
     // define methods
-    def eat() = println("I'm eating")
-  }
+    def eat(): Unit = println("I'm eating")
 
   val anAnimal = new Animal
 
@@ -26,26 +25,22 @@ object ObjectOrientation extends App {
   aDeclaredAnimal.eat() // the most derived method will be called at runtime
 
   // abstract class
-  abstract class WalkingAnimal {
+  abstract class WalkingAnimal :
     val hasLegs = true // by default public, can restrict by adding protected or private
     def walk(): Unit
-  }
 
   // "interface" = ultimate abstract type
-  trait Carnivore {
+  trait Carnivore :
     def eat(animal: Animal): Unit
-  }
 
-  trait Philosopher {
+  trait Philosopher :
     def ?!(thought: String): Unit // valid method name
-  }
 
   // single-class inheritance, multi-trait "mixing"
-  class Crocodile extends Animal with Carnivore with Philosopher {
+  class Crocodile extends Animal with Carnivore with Philosopher :
     override def eat(animal: Animal): Unit = println("I am eating you, animal!")
 
     override def ?!(thought: String): Unit = println(s"I was thinking: $thought")
-  }
 
   val aCroc = new Crocodile
   aCroc.eat(aDog)
@@ -57,36 +52,32 @@ object ObjectOrientation extends App {
   val anotherBasicMath = 1.+(2) // equivalent
 
   // anonymous classes
-  val dinosaur = new Carnivore {
+  val dinosaur = new Carnivore :
     override def eat(animal: Animal): Unit = println("I am a dinosaur so I can eat pretty much anything")
-  }
 
   /*
     What you tell the compiler:
 
-    class Carnivore_Anonymous_35728 extends Carnivore {
+    class Carnivore_Anonymous_35728 extends Carnivore :
       override def eat(animal: Animal): Unit = println("I am a dinosaur so I can eat pretty much anything")
-    }
 
     val dinosaur = new Carnivore_Anonymous_35728
    */
 
   // singleton object
-  object MySingleton { // the only instance of the MySingleton type
+  object MySingleton : // the only instance of the MySingleton type
     val mySpecialValue = 53278
     def mySpecialMethod(): Int = 5327
     def apply(x: Int): Int = x + 1
-  }
 
   MySingleton.mySpecialMethod()
   MySingleton.apply(65)
   MySingleton(65) // equivalent to MySingleton.apply(65)
 
-  object Animal { // companions - companion object
+  object Animal : // companions - companion object
     // companions can access each other's private fields/methods
     // singleton Animal and instances of Animal are different things
     val canLiveIndefinitely = false
-  }
 
   val animalsCanLiveForever = Animal.canLiveIndefinitely // "static" fields/methods
 
@@ -102,21 +93,20 @@ object ObjectOrientation extends App {
   val bob = Person("Bob", 54) // Person.apply("Bob", 54)
 
   // exceptions
-  try {
+  try
     // code that can throw
     val x: String = null
     x.length
-  } catch { // in Java: catch(Exception e) {...}
+  catch // in Java: catch(Exception e) {...}
     case e: Exception => "some faulty error message"
-  } finally {
+  finally
     // execute some code no matter what
-  }
+    println("execute some code no matter what")
 
   // generics
-  abstract class MyList[T] {
+  abstract class MyList[T] :
     def head: T
     def tail: MyList[T]
-  }
 
   // using a generic with a concrete type
   val aList: List[Int] = List(1,2,3) // List.apply(1,2,3)
@@ -129,12 +119,9 @@ object ObjectOrientation extends App {
   // Any modification to an object must return ANOTHER object
   /*
     Benefits:
-    1) works miracles in multithreaded/distributed env
+    1) works miracles in multi-threaded/distributed env
     2) helps making sense of the code ("reasoning about")
    */
   val reversedList = aList.reverse // returns a NEW list
 
   // Point #2: Scala is closest to the OO ideal
-
-
-}

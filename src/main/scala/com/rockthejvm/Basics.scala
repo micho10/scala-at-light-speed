@@ -1,6 +1,6 @@
 package com.rockthejvm
 
-object Basics extends App {
+object Basics extends App :
 
   // defining a value
   val meaningOfLife: Int = 42 // const int meaningOfLife = 42;
@@ -24,19 +24,17 @@ object Basics extends App {
     else if (meaningOfLife > 999) 78
     else 0
 
-  // code blocks
-  val aCodeBlock = {
+  // code blocks (tabs defined since Scala 3)
+  val aCodeBlock =
     // definitions
     val aLocalValue = 67
 
     // value of block is the value of the last expression
     aLocalValue + 3
-  }
 
   // define a function
-  def myFunction(x: Int, y: String): String = {
+  def myFunction(x: Int, y: String): String =
     y + " " + x
-  }
 
   // recursive functions
   def factorial(n: Int): Int =
@@ -57,10 +55,8 @@ object Basics extends App {
   // type of SIDE EFFECTS
   println("I love Scala") // System.out.println, printf, print, console.log
 
-  def myUnitReturningFunction(): Unit = {
+  def myUnitReturningFunction(): Unit =
     println("I don't love returning Unit")
-  }
 
 
-  val theUnit = ()
-}
+  val theUnit: Unit = ()
