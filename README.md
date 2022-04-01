@@ -45,3 +45,12 @@ If you have changes to suggest to this repo, either
 - submit a GitHub issue
 - tell me in the comments to the videos
 - submit a pull request!
+
+## Contents
+  1. Basics
+  2. Object Orientation
+  3. Functional Programming
+  4. Pattern Matching
+  5. Advanced
+  6. Contextual Abstractions
+

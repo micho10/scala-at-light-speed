@@ -1,6 +1,6 @@
 package com.rockthejvm
 
-object Basics extends App :
+object Basics extends App:
 
   // defining a value
   val meaningOfLife: Int = 42 // const int meaningOfLife = 42;

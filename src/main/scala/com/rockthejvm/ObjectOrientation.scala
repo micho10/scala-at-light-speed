@@ -1,15 +1,15 @@
 package com.rockthejvm
 
-object ObjectOrientation extends App :
+object ObjectOrientation extends App:
 
   // java equivalent: public static void main(String[] args)
 
   // class and instance
-  class Animal :
+  class Animal:
     // define fields
     val age: Int = 0
     // define methods
-    def eat(): Unit = println("I'm eating")
+    def eat() = println("I'm eating")
 
   val anAnimal = new Animal
 
@@ -25,19 +25,19 @@ object ObjectOrientation extends App :
   aDeclaredAnimal.eat() // the most derived method will be called at runtime
 
   // abstract class
-  abstract class WalkingAnimal :
+  abstract class WalkingAnimal:
     val hasLegs = true // by default public, can restrict by adding protected or private
     def walk(): Unit
 
   // "interface" = ultimate abstract type
-  trait Carnivore :
+  trait Carnivore:
     def eat(animal: Animal): Unit
 
-  trait Philosopher :
+  trait Philosopher:
     def ?!(thought: String): Unit // valid method name
 
   // single-class inheritance, multi-trait "mixing"
-  class Crocodile extends Animal with Carnivore with Philosopher :
+  class Crocodile extends Animal with Carnivore with Philosopher:
     override def eat(animal: Animal): Unit = println("I am eating you, animal!")
 
     override def ?!(thought: String): Unit = println(s"I was thinking: $thought")
@@ -104,12 +104,12 @@ object ObjectOrientation extends App :
     println("execute some code no matter what")
 
   // generics
-  abstract class MyList[T] :
+  abstract class MyList[T]:
     def head: T
     def tail: MyList[T]
 
   // using a generic with a concrete type
-  val aList: List[Int] = List(1,2,3) // List.apply(1,2,3)
+  val aList: List[Int] = List(1, 2, 3) // List.apply(1,2,3)
   val first = aList.head // int
   val rest = aList.tail
   val aStringList = List("hello", "Scala")
