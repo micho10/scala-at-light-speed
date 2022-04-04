@@ -7,7 +7,7 @@ import java.io.IOException
   * 8 PM tricks you probably didn't know:
   * https://blog.rockthejvm.com/8-pm-tricks/
   */
-object EightPMTricks {
+object EightPMTricks:
 
   // 1 - Switch on Steroids
   val aNumber = 44
@@ -98,10 +98,3 @@ object EightPMTricks {
   val myOptimalList2 = countingList match
     case List(1, _, _) | List (43, _*) => "I like this list"
     case _ => "I don't like it"
-
-
-  def main(args: Array[String]): Unit = {
-
-  }
-
-}
