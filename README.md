@@ -53,4 +53,11 @@ If you have changes to suggest to this repo, either
   4. Pattern Matching
   5. Advanced
   6. Contextual Abstractions
+  7. Tips
+     1. Eight PM tricks
+     2. Why is contravariance so hard
+     3. Akka HTTP in 5 mins.
+
+
+## TODO
 
