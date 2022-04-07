@@ -1,5 +1,6 @@
 package com.rockthejvm
 
+import java.util.function.ToDoubleFunction
 import scala.concurrent.Future
 import scala.util.{Failure, Success, Try}
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -51,6 +52,8 @@ object Advanced extends App:
   // future is a "collection" which contains a value when it's evaluated
   // future is composable with map, flatMap and filter
 
+  // TODO: Fix the implicits section to port it to Scala 3 
+  
   /**
     * Implicits basics
     */

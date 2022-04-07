@@ -57,7 +57,5 @@ If you have changes to suggest to this repo, either
      1. Eight PM tricks
      2. Why is contravariance so hard
      3. Akka HTTP in 5 mins.
-
-
-## TODO
-
+     4. Self Types quick
+     

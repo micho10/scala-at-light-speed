@@ -14,7 +14,7 @@ scalaVersion := "3.1.1"
     "com.typesafe.akka" %% "akka-stream" % akkaVersion,
 
     // akka http
-    "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
-    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
+//    "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
+//    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   )
 /*************** End: needed by scalatips/AkkaHttp5Mins.scala ****************/

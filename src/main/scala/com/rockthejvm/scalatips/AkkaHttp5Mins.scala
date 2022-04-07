@@ -16,8 +16,8 @@ import scala.concurrent.duration.DurationInt
   */
 object AkkaHttp5Mins {
 
-  # // TODO: Fix this class to make it Scala 3 compatible
-  
+  // TODO: Fix this class to make it Scala 3 compatible
+
   /**
     * Setup
     *
