@@ -58,4 +58,5 @@ If you have changes to suggest to this repo, either
      2. Why is contravariance so hard
      3. Akka HTTP in 5 mins.
      4. Self Types quick
+     5. Controllable futures
      
