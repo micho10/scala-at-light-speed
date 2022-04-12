@@ -61,4 +61,5 @@ If you have changes to suggest to this repo, either
      5. Controllable futures
      6. Higher-order Functions for OO Programmers
      7. About Nothing
+     8. 3 Tricks with Call-by-Name
      
