@@ -62,4 +62,5 @@ If you have changes to suggest to this repo, either
      6. Higher-order Functions for OO Programmers
      7. About Nothing
      8. 3 Tricks with Call-by-Name
+     9. 4 Nice Ways to Read Files
      

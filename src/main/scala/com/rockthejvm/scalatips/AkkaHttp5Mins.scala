@@ -1,8 +1,8 @@
 package com.rockthejvm.scalatips
 
 import akka.actor.ActorSystem
-import akka.http.scaladsl.Http
-import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpMethods, HttpRequest, HttpResponse}
+//import akka.http.scaladsl.Http
+//import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpMethods, HttpRequest, HttpResponse}
 import akka.stream.ActorMaterializer
 
 import java.net.URLEncoder
@@ -34,9 +34,10 @@ object AkkaHttp5Mins {
 //    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
 //  )
 
-  implicit val system = ActorSystem() // Akka actors
-  implicit val materializer = ActorMaterializer() // Akka streams
-  import system.dispatcher // "thread pool"
+  // TODO: Akka HTTP still doesn't support Scala 3
+//  implicit val system = ActorSystem() // Akka actors
+//  implicit val materializer = ActorMaterializer() // Akka streams
+//  import system.dispatcher // "thread pool"
 
   val source =
   """
@@ -51,20 +52,20 @@ object AkkaHttp5Mins {
     |}
   """.stripMargin
 
-  val request = HttpRequest(
-    method = HttpMethods.POST,
-    uri = "http://markup.su/api/highlighter",
-    entity = HttpEntity(
-      ContentTypes.`application/x-www-form-urlencoded`, // application/json in most cases
-      s"source=${URLEncoder.encode(source.trim, "UTF-8")}&language=Scala&theme=Sunburst" // the actual data you want to send
-    )
-  )
-
-  def sendRequest(): Future[String] = {
-    val responseFuture: Future[HttpResponse] = Http().singleRequest(request)
-    val entityFuture: Future[HttpEntity.Strict] = responseFuture.flatMap(response => response.entity.toStrict(2.seconds))
-    entityFuture.map(entity => entity.data.utf8String)
-  }
+//  val request = HttpRequest(
+//    method = HttpMethods.POST,
+//    uri = "http://markup.su/api/highlighter",
+//    entity = HttpEntity(
+//      ContentTypes.`application/x-www-form-urlencoded`, // application/json in most cases
+//      s"source=${URLEncoder.encode(source.trim, "UTF-8")}&language=Scala&theme=Sunburst" // the actual data you want to send
+//    )
+//  )
+//
+//  def sendRequest(): Future[String] = {
+//    val responseFuture: Future[HttpResponse] = Http().singleRequest(request)
+//    val entityFuture: Future[HttpEntity.Strict] = responseFuture.flatMap(response => response.entity.toStrict(2.seconds))
+//    entityFuture.map(entity => entity.data.utf8String)
+//  }
 
 //  def simpleRequest() = {
 //    val responseFuture = Http().singleRequest(request)
