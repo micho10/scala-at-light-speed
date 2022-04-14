@@ -11,6 +11,7 @@ scalaVersion := "3.1.1"
   libraryDependencies ++= Seq(
     // akka streams
     "com.typesafe.akka" %% "akka-stream" % akkaVersion,
+    "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
 
     // akka http
 //    "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,

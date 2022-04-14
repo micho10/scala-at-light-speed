@@ -63,4 +63,6 @@ If you have changes to suggest to this repo, either
      7. About Nothing
      8. 3 Tricks with Call-by-Name
      9. 4 Nice Ways to Read Files
+     10. Sync, Async, Blocking and Non-Blocking
+     11. 
      
