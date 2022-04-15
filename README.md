@@ -64,5 +64,5 @@ If you have changes to suggest to this repo, either
      8. 3 Tricks with Call-by-Name
      9. 4 Nice Ways to Read Files
      10. Sync, Async, Blocking and Non-Blocking
-     11. 
+     11. How to create your own String interpolator
      
