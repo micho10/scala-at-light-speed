@@ -66,4 +66,5 @@ If you have changes to suggest to this repo, either
      10. Sync, Async, Blocking and Non-Blocking
      11. How to create your own String interpolator
      12. 5 Nice Tricks for Concise and Expressive Code
+     13. Why are Type Classes useful?
      
