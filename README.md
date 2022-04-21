@@ -67,6 +67,8 @@ If you have changes to suggest to this repo, either
      11. How to create your own String interpolator
      12. 5 Nice Tricks for Concise and Expressive Code
      13. Why are Type Classes useful?
-     14. Monads
+     14. Monads <PENDING>
      15. The Difference Between Null, Nothing, Nil, None and Unit
+     16. The Practical (and Subtle) Differences Between Traits and Abstract Classes
+     17. Type-level programming <PENDING>
      
