@@ -71,4 +71,5 @@ If you have changes to suggest to this repo, either
      15. The Difference Between Null, Nothing, Nil, None and Unit
      16. The Practical (and Subtle) Differences Between Traits and Abstract Classes
      17. Type-level programming <PENDING>
+     18. Eta-expansion and Partially Applied Functions
      
