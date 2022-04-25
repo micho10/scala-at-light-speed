@@ -72,4 +72,5 @@ If you have changes to suggest to this repo, either
      16. The Practical (and Subtle) Differences Between Traits and Abstract Classes
      17. Type-level programming <PENDING>
      18. Eta-expansion and Partially Applied Functions
+     19. Underscores Everywhere
      
