@@ -73,4 +73,6 @@ If you have changes to suggest to this repo, either
      17. Type-level programming <PENDING>
      18. Eta-expansion and Partially Applied Functions
      19. Underscores Everywhere
+     20. Refined Types <PENDING>
+     21. How to Deploy Scala Code to AWS Lambda
      
