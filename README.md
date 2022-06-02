@@ -75,4 +75,5 @@ If you have changes to suggest to this repo, either
      19. Underscores Everywhere
      20. Refined Types <PENDING>
      21. How to Deploy Scala Code to AWS Lambda
+     22. Lenses, Prisms and Optics
      
